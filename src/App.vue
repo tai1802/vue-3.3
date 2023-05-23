@@ -6,7 +6,7 @@ import { ref } from 'vue'
 // import TestComponent4 from './components/TestComponent4.vue'
 // import TestComponent5 from './components/TestComponent5.vue'
 import TestComponent6 from './components/TestComponent6.vue'
-// import TestComponent7 from './components/TestComponent7.vue'
+import TestComponent7 from './components/TestComponent7.vue'
 
 const data = ref({
   name: '',
@@ -38,7 +38,7 @@ const handleGetBar = (...value: any[]) => {
     </TestComponent4> -->
     <!-- <TestComponent5 msg="tttt" /> -->
     <TestComponent6 v-model="data" />
-    <!-- <TestComponent7 foo="123" /> -->
+    <TestComponent7 foo="123" />
   </main>
 </template>
 

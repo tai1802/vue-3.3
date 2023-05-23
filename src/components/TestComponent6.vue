@@ -19,7 +19,7 @@ const modelValue = defineModel<{
   name: string
   age: number
 }>({ local: true, default: { name: 'Name Default', age: 0 } })
-console.log(modelValue)
+// console.log(modelValue)
 </script>
 
 <template>
