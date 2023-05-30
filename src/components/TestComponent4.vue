@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const slot = defineSlots<{
+defineSlots<{
   default?: (props: { msg: string }) => any
   item?: (props: { id: number }) => any
 }>()
 </script>
 
 <template>
-  <div>{{ slot.item }}</div>
+  <div>
+    <slot msg="hi there"></slot>
+  </div>
 </template>

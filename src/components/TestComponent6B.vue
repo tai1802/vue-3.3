@@ -18,11 +18,11 @@ function onInput(e: any) {
 const modelValue = defineModel<{
   name: string
   age: number
-}>({ local: true, default: { name: 'Name Default', age: 0 } })
-// console.log(modelValue)
+}>({ local: true, default: { name: 'default', age: 0 } })
 </script>
 
 <template>
+  <div>inside:: {{ modelValue }}</div>
   <div style="display: flex; flex-direction: column; gap: 1rem">
     <input v-model="modelValue.name" />
     <input v-model="modelValue.age" type="number" />
